@@ -82,12 +82,21 @@ import kubernetes from '../app/assets/svg/skills/kubernetes.svg'
 import linux from '../app/assets/svg/skills/linux.svg'
 import sqlalchemy from '../app/assets/svg/skills/sqlalchemy.svg'
 import fastapi from '../app/assets/svg/skills/fastapi.svg'
+import androidstudio from '../app/assets/svg/skills/androidstudio.svg';
+import jetpackcompose from '../app/assets/svg/skills/jetpackcompose.svg';
+import materialdesign from '../app/assets/svg/skills/materialdesign.svg';
 
 
 
 export const skillsImage = (skill) => {
   const skillID = skill.toLowerCase();
   switch (skillID) {
+    case 'android studio':
+      return androidstudio;
+    case 'jetpack compose':
+      return jetpackcompose;
+    case 'material 3':
+      return materialdesign;
     case 'gcp':
       return gcp;
     case 'html':
